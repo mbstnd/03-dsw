@@ -35,12 +35,12 @@
                             </div>
                             <div class="card-body" style="overflow-y: auto;">
                                 <div class="scroll-container">
-                                    <div class="text-center">
+                                    {{-- <div class="text-center">
                                         <img src="data:image/jpeg;base64,{{ base64_encode($proyecto->imagen) }}"
                                             alt="logo" style="width: auto; height: 75px; background-color: white;"><br>
                                         <label class="bg-primary"
                                             style="margin-top: 5px; width: 40px; height: 40px; border-radius: 50%; padding-top: 8px; text-align: center">{{ count($proyecto->qrs) }}</label>
-                                    </div>
+                                    </div> --}}
                                     <p class="card-text text-justify scroll-container">{{ $proyecto->descripcion }}</p>
                                     {{-- @foreach ($proyecto->qrs as $qr)
                                 <li><label class="badge badge-primary"> {{ $qr->etiqueta }}</label> - <a
@@ -49,11 +49,11 @@
                             @endforeach --}}
                                 </div>
                             </div>
-                            <div class="card-footer">
+                            {{-- <div class="card-footer">
                                 <button class="btn btn-primary w-100" onclick="datosModal({{ $proyecto->id }})"
                                     data-toggle="modal" @if (count($proyecto->qrs) == 0) disabled @endif
                                     data-target="#modal-xl">Ver Códigos Generados</button>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 @endforeach

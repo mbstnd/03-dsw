@@ -490,13 +490,6 @@
                                                 <label for="floatingInput${campo.id}">${campo.label}</label>
                                             </div>
                                             `;
-                                        } else if (campo.type == 'file') {
-                                            colD.innerHTML = `
-                                            <div class="form-floating mb-3">
-                                                <input type="${campo.type}" class="form-control" id="floatingInput${campo.id}" name="${titulo.singular.toLowerCase()}_${campo.name}" value="${valor}">
-                                                <label for="floatingInput${campo.id}">${campo.label}</label>
-                                            </div>
-                                            `;
                                         }
                                         break;
                                     case 'select':
